@@ -56,7 +56,7 @@ importers:
         version: 6.7.5(@typescript-eslint/parser@6.7.5(eslint@8.48.0)(typescript@5.2.2))(eslint@8.48.0)(typescript@5.2.2)
       autoprefixer:
         specifier: 10.4.15
-        version: 10.4.15(postcss@8.4.29)
+        version: 10.4.15(postcss@8.4.31)
       eslint:
         specifier: 8.48.0
         version: 8.48.0
@@ -79,8 +79,8 @@ importers:
         specifier: ^14.0.1
         version: 14.0.1
       postcss:
-        specifier: 8.4.29
-        version: 8.4.29
+        specifier: 8.4.31
+        version: 8.4.31
       prettier:
         specifier: ^3.0.3
         version: 3.0.3
@@ -2842,14 +2842,14 @@ snapshots:
     dependencies:
       has-symbols: 1.0.3
 
-  autoprefixer@10.4.15(postcss@8.4.29):
+  autoprefixer@10.4.15(postcss@8.4.31):
     dependencies:
       browserslist: 4.22.1
       caniuse-lite: 1.0.30001549
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.0.0
-      postcss: 8.4.29
+      postcss: 8.4.31
       postcss-value-parser: 4.2.0
 
   available-typed-arrays@1.0.5: {}
