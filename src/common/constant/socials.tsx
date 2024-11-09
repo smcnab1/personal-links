@@ -4,7 +4,7 @@ import {
   BsRssFill as BlogIcon,
 } from "react-icons/bs";
 import { RiTwitterXFill as TwitterXIcon } from "react-icons/ri";
-
+import { FaOrcid } from "react-icons/fa";
 import { SocialItemProps } from "../types/socials";
 
 const iconSize = 20;
@@ -45,5 +45,14 @@ export const SOCIAL_MEDIA: SocialItemProps[] = [
     isExternal: true,
     eventName: "Social: Blog",
     className: "text-orange-500 hover:bg-orange-500",
+  },
+  {
+    title: "ORCiD",
+    href: "https://orcid.org/0009-0009-4568-9853",
+    icon: <FaOrcid size={iconSize} />,
+    isShow: true,
+    isExternal: true,
+    eventName: "Social: ORCiD",
+    className: "text-green-500 hover:bg-green-500",
   },
 ];
