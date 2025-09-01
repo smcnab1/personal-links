@@ -1,39 +1,37 @@
 # Changelog
-
 All notable changes to this project will be documented in this file.
 
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
 ## [Unreleased]
+- 
 
-<!--
-Notes for any unreleased changes do here. When a new release is cut, move these from
-the unreleased section to the section for the new release.
--->
-
-Upcoming changes.
-
+## [1.0.0] - 2025-09-01
 ### Added
+- Initial stable release of **Personal Links** (link-in-bio site).
+- Clean, responsive layout optimised for mobile and desktop.
+- Accessible components with semantic HTML and keyboard navigation.
+- Dark/Light mode styling with sensible defaults.
+- SEO meta, Open Graph and social preview tags.
+- Configurable links/profile data via a simple source file.
+- Social icons and external link handling (opens in new tab where appropriate).
+- Basic analytics hook point (ready for your provider of choice).
+- Favicon and social preview image assets in `public/`.
+- Vercel deploy button for one-click deployment.
+- README badges (contributors, forks, stars, issues, licence, demo, build, version, last commit).
+- MIT Licence.
 
 ### Changed
+- N/A – first stable release.
 
-### Removed
+### Fixed
+- N/A – first stable release.
 
-## [project-template-repo-1.0] - 2024-01-01
+### Security
+- N/A – first stable release.
 
-🌱 Initial Release.
+---
 
-### Added
-
-- Auto-Update Documentation Links with current repo name
-- Update Email Addresses: CODE_OF_CONDUCT, SECURITY.
-- Download files & folders from another GitHub Repo
-- Generate Markdown styled index file with SEO details
-- Generate Table of Contents into README
-- Several files already created for you as a template
-
-
-<!--
-These Markdown anchors provide a link to the diff for each release. They should be
-updated any time a new release is cut.
--->
-[Unreleased]: /
-[project-template-repo-1.0]: https://github.com/smcnab1/project-template-repo/releases/tag/project-template-repo-1.0
+[Unreleased]: https://github.com/smcnab1/personal-links/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/smcnab1/personal-links/releases/tag/v1.0.0
