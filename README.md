@@ -1,41 +1,40 @@
 <!-- TOP ROW OF BADGES -->
+<div align="center">
+  
+|     |     |     |     |     |
+|:---:|:---:|:---:|:---:|:---:|
+| [![Contributors][contributors-shield]][contributors-url] | [![Forks][forks-shield]][forks-url] [![Stargazers][stars-shield]][stars-url] | [![Repo Size][repo-size-shield]][repo-url] | [![Issues][issues-shield]][issues-url] | [![MIT License][license-shield]][license-url] |
+| [![Demo][demo-shield]][demo-url] | [![Deploy with Vercel][vercel-button]][vercel-url] | [![Build][build-shield]][build-url] | [![Version][version-shield]][version-url] | [![Last Commit][commit-shield]][commit-url] |
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![Kofi][kofi-badge]][kofi-url]
-
+</div>
 <a name="readme-top"></a>
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/smcnab1/project-template-repo">
+  <a href="https://github.com/smcnab1/personal-links">
     <img src="images/avatar.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Project Template Repo</h3>
+<h3 align="center">Personal Links</h3>
 
   <p align="center">
-    Jumpstart your development with this versatile template. 🚀📁
+    A fast, accessible, self-hosted link-in-bio site — minimal, responsive, and easy to maintain.
     <br />
-    <a href="https://smcnab1.github.io/project-template-repo/"><strong>Explore the docs »</strong></a>
+    <a href="https://contact.sammcnab.co.uk"><strong>View Demo »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/smcnab1/project-template-repo">View Demo</a>
+    <a href="https://github.com/smcnab1/personal-links/issues/new?template=1-bug-report.md">Report Bug</a>
     ·
-    <a href="https://github.com/smcnab1/project-template-repo/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/smcnab1/project-template-repo/issues">Request Feature</a>
+    <a href="https://github.com/smcnab1/personal-links/issues/new?template=3-feature-request.md">Request Feature</a>
   </p>
 </div>
 
 <details>
   <summary>View Contents</summary>
 
-_Last Updated DATE_
+_Last Updated 1 September 2025_
+
 <!-- toc -->
 
 - [About The Project](#about-the-project)
@@ -51,36 +50,38 @@ _Last Updated DATE_
   - [License](#license)
 
 <!-- tocstop -->
-  
+
 </details>
 
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
+
 <div align="center">
-  <a href="https://github.com/smcnab1/project-template-repo">
-    <img src="images/screenshot.png" alt="Logo" width="100%" height="auto">
+  <a href="https://github.com/smcnab1/personal-links">
+    <img src="images/screenshot.png" alt="Screenshot" width="100%" height="auto">
   </a>
-  </div>
+</div>
   
-This repository can be used as a template to load your new repository with ease. Including the following features to save your time in generating new repositories.
+**Personal Links** is a lightweight link-in-bio site you can host yourself. It focuses on performance, accessibility, and a simple editing workflow so you can keep your public links up to date without fuss.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Features
 
-- Auto-Update Documentation Links with current repo name
-- Update Email Addresses: CODE_OF_CONDUCT, SECURITY.
-- Download files & folders from another GitHub Repo
-- Generate Markdown styled index file with SEO details
-- Generate Table of Contents into README
-- Several files already created for you as a template
+- ⚡ **Fast & responsive** by default (mobile-first, lighthouse-friendly)
+- ♿ **Accessible** structure and semantics
+- 🧩 **Simple content model** — keep links in one place, easy to edit
+- 🌓 **Dark/light mode** friendly styling
+- 🔍 **SEO-ready** metadata & share cards (Open Graph)
+- 🚀 **Easy deploys** to Vercel/GitHub Pages (static export supported)
 
 ### Built with
 
-- Markdown
-- Python
-- GitHub Actions
-- Shell
+- Next.js & TypeScript
+- Tailwind CSS
+- PNPM
+- Vercel (recommended deploy target)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -88,71 +89,62 @@ This repository can be used as a template to load your new repository with ease.
 
 ### Prerequisites
 
-Accessible using browser or GitHub mobile application.
+- Node.js 18+ (20+ recommended)
+- PNPM installed (`npm i -g pnpm`) — or use NPM/Yarn if preferred
 
 ### Install
 
-1. Click on [use template](https://github.com/new?template_name=project-template-repo&template_owner=smcnab1) to generate new repository from template.
+[![Deploy with Vercel][vercel-button]][vercel-url]
 
-2. Enter repository name and Description.
+```bash
+# 1) Clone
+git clone https://github.com/smcnab1/personal-links.git
+cd personal-links
 
-3. Generate new repository.
+# 2) Install deps
+pnpm install
 
-4. Navigate to **Settings > Actions > General** and set ***Workflow Permissions*** to _Read and write permissions_
+# 3) Run locally
+pnpm dev
+```
+
+Optional environment variables (if you add analytics or custom meta) can be placed in `.env.local`.
 
 ### Usage
 
-- Repository Link Updater
-    - WIP
+- **Add or edit links:** update your links data/component in `src/` (e.g. a `links.ts` or the relevant section in your page component).
+- **Branding:** replace images in `images/` and `public/` (e.g. avatar, social preview).
+- **Build & Export:**
 
-- License Date Updater
-    - WIP
+  ```bash
+  pnpm build && pnpm start        # production server
+  # or, for static export if configured:
+  pnpm build && pnpm export
+  ```
 
-- Code of Conduct Email Updater
-    - WIP
-
-- Security Policy Email Updater
-    - WIP
-
-- Table of Contents Generator
-    - WIP
-
-- Index File Generator
-    - WIP
-
-- Combinations
-    - WIP
+- **Deploy:** deploy the repo to Vercel (zero-config) or serve the static export via GitHub Pages/another host.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Back Matter
 
-<!-- ROADMAP -->
 ### Roadmap
 
-- [ ] Finalise Documentation.
-- [ ] Remove need for config file, all set within Actions.
-- [ ] Combination Selection instead of individual options.
-
-See the [open issues](https://github.com/smcnab1/project-template-repo/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/smcnab1/personal-links/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
 
 <a name="contributing"></a>
 
 ### Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are welcome — thank you!
+If you have suggestions, please open an issue (use the **enhancement** or **feature-request** labels) or submit a PR.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement" or "feature-request".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project.
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m "feat: add amazing feature"`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
 ### License
@@ -163,22 +155,25 @@ This project is licensed under the [MIT License](LICENSE.md).
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/smcnab1/project-template-repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/smcnab1/project-template-repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/smcnab1/project-template-repo.svg?style=for-the-badge
-[forks-url]: https://github.com/smcnab1/project-template-repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/smcnab1/project-template-repo.svg?style=for-the-badge
-[stars-url]: https://github.com/smcnab1/project-template-repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/smcnab1/project-template-repo.svg?style=for-the-badge
-[issues-url]: https://github.com/smcnab1/project-template-repo/issues
-[license-shield]: https://img.shields.io/github/license/smcnab1/project-template-repo.svg?style=for-the-badge
-[license-url]: https://github.com/smcnab1/project-template-repo/blob/master/LICENSE.md
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/sammcnab/
-[product-screenshot]: images/screenshot.png
-[email-badge]: https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white
-[email-url]: mailto:sam@sammcnab.co.uk
-[git-badge]: https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white
-[git-url]: https://github.com/smcnab1
-[kofi-badge]: https://ko-fi.com/img/githubbutton_sm.svg
-[kofi-url]: https://ko-fi.com/sammcnab1
+[contributors-shield]: https://img.shields.io/github/contributors/smcnab1/personal-links.svg?style=plastic
+[contributors-url]: https://github.com/smcnab1/personal-links/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/smcnab1/personal-links.svg?style=plastic
+[forks-url]: https://github.com/smcnab1/personal-links/network/members
+[stars-shield]: https://img.shields.io/github/stars/smcnab1/personal-links.svg?style=plastic
+[stars-url]: https://github.com/smcnab1/personal-links/stargazers
+[issues-shield]: https://img.shields.io/github/issues/smcnab1/personal-links.svg?style=plastic
+[issues-url]: https://github.com/smcnab1/personal-links/issues
+[license-shield]: https://img.shields.io/github/license/smcnab1/personal-links.svg?style=plastic
+[license-url]: https://github.com/smcnab1/personal-links/blob/master/LICENSE.md
+[vercel-button]: https://img.shields.io/badge/Deploy%20with-Vercel-000?style=plastic&logo=vercel&logoColor=white
+[vercel-url]: https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsmcnab1%2Fpersonal-links&project-name=personal-links&repository-name=personal-links&redirect-url=https%3A%2F%2Fgithub.com%2Fsmcnab1&demo-title=Personal%20Links%20%E2%80%94%20Fast%2C%20Accessible%20Link-in-Bio&demo-description=Minimal%2C%20responsive%20link%20hub%20built%20with%20Next.js%20and%20Tailwind.%20SEO%20meta%2C%20and%20simple%20content%20updates.%20Deploy%20to%20Vercel%20in%20one%20click.&demo-url=https%3A%2F%2Fcontact.sammcnab.co.uk&demo-image=https%3A%2F%2Fgithub.com%2Fsmcnab1%2Fpersonal-links%2Fblob%2Fmaster%2Fimages%2Fscreenshot.png%3Fraw%3Dtrue
+[repo-size-shield]: https://img.shields.io/github/repo-size/smcnab1/personal-links?style=plastic&logo=github
+[repo-url]: https://github.com/smcnab1/personal-links
+[demo-shield]: https://img.shields.io/website?url=https%3A%2F%2Fcontact.sammcnab.co.uk%2F&up_message=live&style=plastic&label=demo
+[demo-url]: https://contact.sammcnab.co.uk
+[build-shield]: https://img.shields.io/github/checks-status/smcnab1/personal-links/master?style=plastic
+[build-url]: https://github.com/smcnab1/personal-links/actions
+[version-url]: https://github.com/smcnab1/personal-links/releases
+[version-shield]: https://img.shields.io/github/v/release/smcnab1/personal-links?style=plastic
+[commit-shield]: https://img.shields.io/github/last-commit/smcnab1/personal-links?style=plastic
+[commit-url]: https://github.com/smcnab1/personal-links/commits/
