@@ -3,7 +3,7 @@
   
 |     |     |     |     |     |
 |:---:|:---:|:---:|:---:|:---:|
-| [![Contributors][contributors-shield]][contributors-url] | [![Forks][forks-shield]][forks-url] [![Stargazers][stars-shield]][stars-url] | [![Repo Size][repo-size-shield]][repo-url] | [![Issues][issues-shield]][issues-url] | [![MIT License][license-shield]][license-url] |
+| [![Contributors][contributors-shield]][contributors-url] | [![Forks][forks-shield]][forks-url] | [![Stargazers][stars-shield]][stars-url] | [![Issues][issues-shield]][issues-url] | [![MIT License][license-shield]][license-url] |
 | [![Demo][demo-shield]][demo-url] | [![Deploy with Vercel][vercel-button]][vercel-url] | [![Build][build-shield]][build-url] | [![Version][version-shield]][version-url] | [![Last Commit][commit-shield]][commit-url] |
 
 </div>
